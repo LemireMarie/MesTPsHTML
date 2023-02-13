@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="voici les exercices  du TP n°4 sur les formulaires">
+    <link rel="shortcut icon" href="./icons8-formulaire-100.png" type="image/x-icon">
+    <title>TP&nbsp;n°4&nbsp;-&nbsp;Les formulaires</title>
+</head>
+
+<body>
+    <h1>Lemire&nbsp;Marie&nbsp;-&nbsp;Les&nbsp;formulaires</h1>
+    <h2>Mon&nbsp;premier&nbsp;formulaire</h2>
+    <form action="#" method="post">
+        <div class="genre">
+            <input type="radio" name="genre" id="homme" value="homme">
+            <label for="homme">Homme</label>
+            <input type="radio" name="genre" id="femme" value="femme">
+            <label for="femme">Femme</label>
+            <input type="radio" name="genre" id="no_gender" value="non-renseigné">
+            <label for="no_gender">Non renseigné</label> 
+        </div>
+        <div class="nom">
+            <label for="nom">Nom : </label>
+            <input type="text" name="nom" id="nom">
+        </div>
+        <div class="prenom">
+            <label for="prenom">Prénom : </label>
+            <input type="text" name="prenom" id="prenom">
+        </div>
+        <div>
+            <label for="age">Age : </label>
+            <input type="number" name="age" id="age" min="16" max="99">
+        </div>
+        <div class="email">
+            <label for="email">E-mail : </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div class="text">
+            <label for="text">Message : </label>
+            <textarea name="text" id="text" cols="30" rows="5"></textarea>
+        </div>
+        <div class="case">
+            <input type="checkbox" name="case" id="case" value="confirm">
+            <label for="case">En cochant cette case, j'accepte les conditions relatives à l'utilisation de mes données personnelles.</label>
+        </div>
+        <div class="bouton">
+            <input type="submit" value="Envoyer le message">
+        </div>
+    </form>
+
+    <hr>
+
+    <h2>Ensemble&nbsp;de&nbsp;champs</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Mon second formulaire</legend>
+            <fieldset>
+                <legend>Identité</legend>
+                <div class="genre">
+                    <input type="radio" name="genre" id="man" value="man">
+                    <label for="man">Homme</label>
+                    <input type="radio" name="genre" id="woman" value="woman">
+                    <label for="woman">Femme</label>
+                    <input type="radio" name="genre" id="noGender" value="no_gender">
+                    <label for="noGender">Non renseigné</label>
+                </div>
+                <div class="name">
+                    <label for="name">Nom : </label>
+                    <input type="text" placeholder="ex : Dupont" name="name" id="name">
+                </div>
+                <div class="firstname">
+                    <label for="firstname">Prénom : </label>
+                    <input type="text" placeholder="ex : Gédéon" name="surname" id="firstname">
+                </div>
+                <div>
+                    <label for="age_">Age : </label>
+                    <input type="number" placeholder="ex : 21" name="age_" id="age_" min="16" max="99">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Situation personnelle</legend>
+                <input type="radio" name="situation" id="single" value="single">
+                <label for="single">Célibataire</label>
+                <input type="radio" name="situation" id="married" value="married">
+                <label for="married">Marié</label>
+                <input type="radio" name="situation" id="veuf" value="veuf">
+                <label for="veuf">Veuf</label>
+                <input type="radio" name="situation" id="union_libre" value="union_libre">
+                <label for="union_libre">Union libre</label>
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="phone">Téléphone : </label>
+                <input type="tel" placeholder="ex : 0148265487" name="phone" id="phone">
+                <div>
+                <label for="mail">E-mail : </label>
+                <input type="email" placeholder="ex : g.dupont@gmail.com" name="mail" id="mail">
+                </div>
+            </fieldset>
+            <input type="checkbox" name="confirm" id="confirm" value="confirm">
+            <label for="confirm">En cochant cette case, je confirme l'exactitude des informations renseignées.</label>
+            <div class="submit">
+                <input type="submit" value="Transmettre mes coordonnées">
+            </div>
+        </fieldset>
+
+    </form>
+
+
+</body>
+
+</html>
